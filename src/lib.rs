@@ -31,7 +31,7 @@
 pub fn largest(values: &[i32]) -> i32 {
     let mut biggest = 0;
     for i in 1..values.len() - 1 {
-        if values[i] < biggest {
+        if values[i] > biggest {
             biggest = values[i];
         }
     }
